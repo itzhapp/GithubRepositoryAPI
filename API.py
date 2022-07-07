@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 import re
 import json
 
-
-
 def main(programmingLanguage, page):
     url = 'https://github.com/search?l=&p='+page+'&q=language%3A'+programmingLanguage+'+license%3Agpl&ref=advsearch&type=Repositories'
     response = requests.get(url)
